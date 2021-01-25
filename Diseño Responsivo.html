@@ -1,0 +1,118 @@
+  
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 2.8 - Proyecto</title>
+    <link rel="stylesheet" href="css/Styles 2.8.css" type="text/css" />
+
+</head>
+<body>
+    <div class="contenedor">
+        <header class="título">
+            <h1>LEC 2021</h1>
+            <nav>
+                <div></div>
+                <div class="menú">Inicio</div>
+                <div class="menú">Nosotros</div>
+                <div class="menú">Contacto</div>
+                <div class="menú">Soporte</div>
+            </nav>
+        </header>
+        <main>
+            <section class="principal">
+                <div>
+                    <h1 class="título">Introducción</h1>
+                </div>
+                <div>
+                    <p>
+                        Este año, el equipo de G2 ha tenido varios cambios en su Roster para 2021. 
+                        Con la salida de Perkz hacia el equipo norteamericano de Cloud9 el club encontro la oportunidad de realiza el fichaje del exjugador de Fnatic "Rekkles" siendo este el unico cambio en el equipo.
+                    </p>
+                    <p>
+                        El equipo de Fnatic cambia dos integrantes de su equipo como son el medio y el adcarry,
+                        siendo estos sustituidos por Nisqy (Ex-midlaner de Cloud9) y por Upset (Ex-Adcarry de Schalke 04).
+                    </p>
+                    <p>
+                       Promisq, support de G2 en 2019, entra como soporte para el equipo de Astralis
+                    </p>
+                    <p>
+                        Nuevo fichaje en la jungla de Mad Lions, Elyoya, jugador de origen español entra para el roster de 2021.
+                    </p>
+                    <p>
+                        Vetheo, el nuevo midlaner de tan solo 18 años que participara en el equipo de Misfits Gaming para esta temporada.
+                    </p>
+                </div>
+            </section>
+            <section class="jugadores">
+                <img src="img/rekkles.jfif">     <img src="img/promisq.jpg">
+                <img src="img/hans sama.jpg">      <img src="img/razork.jpg">
+                <img src="img/nisqy.jpg"> <img src="img/vetheo.jpeg">
+                <img src="img/Carzzy.jpg">    <img src="img/jankos.jpg">
+                <img class="oculto" src="img/abbeddage.jpg">
+            </section>
+        </main>
+        <section class="noticias">
+            <h2 class="título">Noticias</h2>
+            <article>
+                <h4>22 de enero</h4>
+                <h3 class="título">Resumen Jornada 1</h3>
+                <p>
+                    El equipo de G2 arrolla a Mad Lions tras un pick de Sivir por parte de Rekkles.
+                </p>
+                <p>
+                    Rogue consigue la victoria sobre un Excel que no consigue dar buenas sensaciones.
+                </p>
+                <p>
+                    Fnatic es derrotado por un Misfits liderado por un Vetheo implecable.
+                </p>
+                
+            </article>
+            <article>
+                <h4>23 de enero</h4>
+                <h3 class="título">Resumen Jornada 2</h3>
+                <p>
+                    Excel,Vitality y Mad Lions consiguen rascar sus primeras victorias en el dia de hoy
+                </p>
+                <p>
+                    G2 y Rogue que vuelven a obtener una victoria mientras que Fnatic es derrotado por este ultimo
+                </p>
+            </article>
+            <article>
+                <h4>24 de enero</h4>
+                <h3 class="título">Resumen Jornada 3</h3>
+                <p>
+                    Astralis consigue vencer a Vitality tras un duro partido.
+                </p>
+                <p>
+                    Rogue consigue sumar su tercera victoria contra SK Gaming.
+                </p>
+                <p>
+                    Misfit consigue vencer a Mad Lions tras una increible performance de Razork.
+                </p>
+                <p>
+                    Fnatic parece que despierta en la ultima jornada de la semana y consigue una victoria facil ante el Schalke 04
+                </p>
+                <p>
+                    G2 derrota a Excel y empata en resultado al conjunto de Rogue
+                </p>
+            </article>
+        </section>
+    </div>
+    <script>
+        $(function() {
+            //Captura del evento para mostrar u ocultar
+            $(".icon").click(function() {
+            $(".menu_item").toggle();
+            });
+            $(window).resize(function() {
+            var anchura = $(this).width();
+            if (anchura > 576) {
+                $(".menu_item").show();
+            }
+            });
+        });
+    </script>
+</body>
+</html>
